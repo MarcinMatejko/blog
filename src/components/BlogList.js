@@ -12,11 +12,10 @@ export const BlogList = () => {
   }, []);
   return (
     <div>
-      <h3>Wszystkie posty</h3>
-      <ul>
-        {posts.map(post => (<Post key={post.id} post={post}/>))}
-        
-      </ul>
+      <h2>Wszystkie posty</h2>
+      <div>
+        {posts.map(post => (<Post key={post._id} post={post}/>))}
+      </div>
     </div>
   )
 }
